@@ -46,4 +46,20 @@ dependencies {
     implementation("androidx.compose.foundation:foundation:1.4.0")
     implementation("androidx.compose.material:material:1.4.0")
     implementation("androidx.activity:activity-compose:1.7.0")
+
+
+    val koinComposeVersion = "3.4.1"
+    implementation("io.insert-koin:koin-androidx-compose:$koinComposeVersion")
+
+    val coilVersion = "2.2.2"
+    implementation("io.coil-kt:coil-compose:$coilVersion")
+
+    val accompanistVersion = "0.28.0"
+    implementation("com.google.accompanist:accompanist-systemuicontroller:$accompanistVersion")
+
+    val navVersion = "2.5.3"
+    implementation("androidx.navigation:navigation-compose:$navVersion")
+
+    implementation ("androidx.compose.material3:material3:1.1.0")
+    implementation ("androidx.compose.material3:material3-window-size-class:1.1.0")
 }
