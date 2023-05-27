@@ -7,10 +7,10 @@ private const val IMAGE_URL = "https://image.tmdb.org/t/p/w500/"
 
 internal fun MovieModelDto.toDomain(): MovieModel {
     return MovieModel(
-         id, title, description, image, releaseDate
+        id, title, description, getImageUrl(image), releaseDate
     )
 }
 
 private fun getImageUrl(image: String): String {
-    return IMAGE_URL+image
+    return IMAGE_URL + image
 }

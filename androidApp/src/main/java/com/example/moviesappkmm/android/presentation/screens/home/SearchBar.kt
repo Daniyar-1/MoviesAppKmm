@@ -70,7 +70,6 @@ fun ClosedAppBar(onSearchClicked: () -> Unit) {
     )
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun OpenedAppBar(
     text: String,

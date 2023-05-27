@@ -1,6 +1,6 @@
 package com.example.moviesappkmm.data.remote
 
-import com.example.moviesappkmm.util.DispatcherIO
+import com.example.moviesappkmm.utils.DispatcherIO
 import kotlinx.coroutines.withContext
 
 internal class RemoteDataSource(

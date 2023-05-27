@@ -9,7 +9,5 @@ class GetAllMoviesUseCase : KoinComponent {
     private val repo: MovieRepo by inject()
 
     @Throws(Exception::class)
-    suspend operator fun invoke(page:Int): List<MovieModel>{
-        return repo.getAllMovies(page)
+    suspend operator fun invoke(page:Int) = repo.getAllMovies(page)
     }
-}

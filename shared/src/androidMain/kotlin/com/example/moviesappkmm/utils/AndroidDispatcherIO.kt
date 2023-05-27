@@ -1,4 +1,4 @@
-package com.example.moviesappkmm.util
+package com.example.moviesappkmm.utils
 
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers

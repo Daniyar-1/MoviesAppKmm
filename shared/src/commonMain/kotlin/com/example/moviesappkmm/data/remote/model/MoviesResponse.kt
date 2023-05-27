@@ -1,5 +1,6 @@
 package com.example.moviesappkmm.data.remote.model
 
+@kotlinx.serialization.Serializable
 internal data class MoviesResponse(
-    val result: List<MovieModelDto >
+    val results: List<MovieModelDto>
 )

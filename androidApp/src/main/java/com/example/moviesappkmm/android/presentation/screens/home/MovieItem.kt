@@ -51,10 +51,7 @@ fun MovieItem(
                 contentAlignment = Alignment.Center
             ) {
                 AsyncImage(
-                    model = ImageRequest.Builder(LocalContext.current)
-                        .data(movie.image)//.replace("http", "https")
-                        .crossfade(true)
-                        .build(),
+                    model = movie.image,
                     contentDescription = null,
                     error = painterResource(id = R.drawable.no_image),
                     placeholder = painterResource(id = R.drawable.loading),

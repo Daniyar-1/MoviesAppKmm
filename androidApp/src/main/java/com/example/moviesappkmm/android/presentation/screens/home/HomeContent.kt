@@ -1,5 +1,6 @@
 package com.example.moviesappkmm.android.presentation.screens.home
 
+import android.util.Log
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -13,25 +14,27 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.example.moviesappkmm.domain.model.MovieModel
+import java.util.Arrays
 
 @Composable
 fun HomeContent(
     vm: HomeVM,
     modifier: Modifier = Modifier,
-    movies: ArrayList<MovieModel> = arrayListOf(),
+    movies: List<MovieModel>,
     navigateToDetail: (MovieModel) -> Unit,
 ) {
 
-    movies.add(MovieModel(1,"Foreg", "this is description", "https://i.ytimg.com/vi/e9ltAgFmPrU/maxresdefault.jpg", "12.02.22"))
-    movies.add(MovieModel(2,"Foreg", "this is description", "https://i.ytimg.com/vi/e9ltAgFmPrU/maxresdefault.jpg", "12.02.22"))
-    movies.add(MovieModel(3,"Foreg", "this is description", "https://i.ytimg.com/vi/e9ltAgFmPrU/maxresdefault.jpg", "12.02.22"))
-    movies.add(MovieModel(4,"Foreg", "this is description", "https://i.ytimg.com/vi/e9ltAgFmPrU/maxresdefault.jpg", "12.02.22"))
-    movies.add(MovieModel(5,"Foreg", "this is description", "https://i.ytimg.com/vi/e9ltAgFmPrU/maxresdefault.jpg", "12.02.22"))
-    movies.add(MovieModel(6,"Foreg", "this is description", "https://i.ytimg.com/vi/e9ltAgFmPrU/maxresdefault.jpg", "12.02.22"))
-    movies.add(MovieModel(7,"Foreg", "this is description", "https://i.ytimg.com/vi/e9ltAgFmPrU/maxresdefault.jpg", "12.02.22"))
-    movies.add(MovieModel(8,"Foreg", "this is description", "https://i.ytimg.com/vi/e9ltAgFmPrU/maxresdefault.jpg", "12.02.22"))
-    movies.add(MovieModel(9,"Foreg", "this is description", "https://i.ytimg.com/vi/e9ltAgFmPrU/maxresdefault.jpg", "12.02.22"))
-    movies.add(MovieModel(10,"Foreg", "this is description", "https://i.ytimg.com/vi/e9ltAgFmPrU/maxresdefault.jpg", "12.02.22"))
+    Log.e("ololo", "HomeContent: "+movies.joinToString())
+//    movies.add(MovieModel(1,"Foreg", "this is description", "https://i.ytimg.com/vi/e9ltAgFmPrU/maxresdefault.jpg", "12.02.22"))
+//    movies.add(MovieModel(2,"Foreg", "this is description", "https://i.ytimg.com/vi/e9ltAgFmPrU/maxresdefault.jpg", "12.02.22"))
+//    movies.add(MovieModel(3,"Foreg", "this is description", "https://i.ytimg.com/vi/e9ltAgFmPrU/maxresdefault.jpg", "12.02.22"))
+//    movies.add(MovieModel(4,"Foreg", "this is description", "https://i.ytimg.com/vi/e9ltAgFmPrU/maxresdefault.jpg", "12.02.22"))
+//    movies.add(MovieModel(5,"Foreg", "this is description", "https://i.ytimg.com/vi/e9ltAgFmPrU/maxresdefault.jpg", "12.02.22"))
+//    movies.add(MovieModel(6,"Foreg", "this is description", "https://i.ytimg.com/vi/e9ltAgFmPrU/maxresdefault.jpg", "12.02.22"))
+//    movies.add(MovieModel(7,"Foreg", "this is description", "https://i.ytimg.com/vi/e9ltAgFmPrU/maxresdefault.jpg", "12.02.22"))
+//    movies.add(MovieModel(8,"Foreg", "this is description", "https://i.ytimg.com/vi/e9ltAgFmPrU/maxresdefault.jpg", "12.02.22"))
+//    movies.add(MovieModel(9,"Foreg", "this is description", "https://i.ytimg.com/vi/e9ltAgFmPrU/maxresdefault.jpg", "12.02.22"))
+//    movies.add(MovieModel(10,"Foreg", "this is description", "https://i.ytimg.com/vi/e9ltAgFmPrU/maxresdefault.jpg", "12.02.22"))
     Column(
         modifier = modifier
             .fillMaxSize()

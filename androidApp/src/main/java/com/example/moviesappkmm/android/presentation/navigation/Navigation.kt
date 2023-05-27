@@ -15,7 +15,7 @@ fun Navigation() {
         navController = navController, startDestination = Screen.HomeScreen.route
     ) {
         composable(Screen.HomeScreen.route) {
-            Home()
+            Home(retryAction = {}, navigateToDetail = {})
         }
         composable(Screen.DetailScreen.route) {
             Detail()

@@ -1,7 +1,6 @@
 plugins {
     id("com.android.application")
-    kotlin("android")
-}
+    kotlin("android") }
 
 android {
     namespace = "com.example.moviesappkmm.android"
@@ -47,19 +46,29 @@ dependencies {
     implementation("androidx.compose.material:material:1.4.0")
     implementation("androidx.activity:activity-compose:1.7.0")
 
-
+    //Koin
     val koinComposeVersion = "3.4.1"
     implementation("io.insert-koin:koin-androidx-compose:$koinComposeVersion")
 
+    //Coil
     val coilVersion = "2.2.2"
     implementation("io.coil-kt:coil-compose:$coilVersion")
 
     val accompanistVersion = "0.28.0"
     implementation("com.google.accompanist:accompanist-systemuicontroller:$accompanistVersion")
 
+    //NavComponents
     val navVersion = "2.5.3"
     implementation("androidx.navigation:navigation-compose:$navVersion")
 
-    implementation ("androidx.compose.material3:material3:1.1.0")
-    implementation ("androidx.compose.material3:material3-window-size-class:1.1.0")
+    //Material3
+    implementation("androidx.compose.material3:material3:1.1.0")
+    implementation("androidx.compose.material3:material3-window-size-class:1.1.0")
+
+    //CollectAsFlow
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.6.1")
+
+    //lottie animation
+    implementation("com.airbnb.android:lottie-compose:4.2.0")
+
 }
